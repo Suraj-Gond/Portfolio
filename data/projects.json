@@ -1,0 +1,57 @@
+[
+  {
+    "title": "VasAQ — Air Quality Monitor",
+    "thumbnail_url": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&h=400&fit=crop",
+    "thumbnail_mobile": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&h=338&fit=crop",
+    "thumbnail_desktop": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&h=400&fit=crop",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "Tailwind CSS",
+      "LeafletJS",
+      "data.gov.in API"
+    ],
+    "description": "An integrated urban air quality monitoring, source apportionment, and 15-day AQI forecasting web application using real-time government data.",
+    "github_link": "https://github.com/surajgond",
+    "live_demo_link": "#",
+    "deployment_link": "#",
+    "in_development": true,
+    "featured": true
+  },
+  {
+    "title": "Student Management System",
+    "thumbnail_url": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop",
+    "thumbnail_mobile": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=338&fit=crop",
+    "thumbnail_desktop": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&h=400&fit=crop",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "MySQL",
+      "Bootstrap"
+    ],
+    "description": "A full-stack CRUD application for managing student records with authentication, search filters, and PDF report generation.",
+    "github_link": "#",
+    "live_demo_link": "#",
+    "deployment_link": "#",
+    "in_development": true,
+    "featured": false
+  },
+  {
+    "title": "E-Commerce Analytics Dashboard",
+    "thumbnail_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    "thumbnail_mobile": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=338&fit=crop",
+    "thumbnail_desktop": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop",
+    "tech_stack": [
+      "Python",
+      "Flask",
+      "Chart.js",
+      "MySQL"
+    ],
+    "description": "A real-time dashboard for tracking sales metrics, inventory levels, and customer analytics with interactive charts.",
+    "github_link": "https://github.com/surajgond",
+    "live_demo_link": "#",
+    "deployment_link": "#",
+    "in_development": true,
+    "featured": false
+  }
+]

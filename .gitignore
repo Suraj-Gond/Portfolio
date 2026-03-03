@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Node (Tailwind build if needed)
+node_modules/
+
+# Design system (generated)
+design-system/
+.agent/
+input.css
+PRD for portfolio.md
+package-lock.json
+package.json
+homepage_lite.html
+homepage_dark_00.html
+deployment_guide.md.resolved

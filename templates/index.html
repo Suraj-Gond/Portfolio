@@ -1,0 +1,592 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="w-full max-w-3xl px-4 pt-28 pb-10 flex flex-col gap-24">
+
+    <!-- Hero -->
+    <section id="hero" class="flex flex-col gap-8">
+
+        <div class="inline-flex items-center gap-2 font-mono text-xs tracking-widest text-accent dark:text-accent-dark">
+            <span class="relative flex h-2 w-2">
+                <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent dark:bg-accent-dark opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-accent dark:bg-accent-dark"></span>
+            </span>
+            <span class="uppercase">Open to work</span>
+        </div>
+
+
+        <div class="flex flex-col gap-1 select-none">
+            <h1
+                class="text-[12vw] md:text-[7vw] font-black leading-[0.85] tracking-tighter text-fg dark:text-white font-display">
+                SURAJ
+            </h1>
+            <h1 class="text-[12vw] md:text-[7vw] font-black leading-[0.85] tracking-tighter text-stroke font-display">
+                GOND
+            </h1>
+        </div>
+
+
+        <div class="border-l-2 border-accent dark:border-accent-dark pl-5 py-2 max-w-lg">
+            <p class="font-mono text-sm text-fg dark:text-white font-semibold leading-relaxed">
+                Full-Stack Web Developer
+            </p>
+            <p class="font-mono text-sm text-muted dark:text-muted-dark leading-relaxed mt-1">
+                Building responsive, high-performance web applications using
+                <span class="text-fg dark:text-white font-semibold">Flask</span>,
+                <span class="text-fg dark:text-white font-semibold">JavaScript</span>,
+                <span class="text-fg dark:text-white font-semibold">MySQL</span>, and
+                <span class="text-fg dark:text-white font-semibold">Tailwind CSS</span>.
+            </p>
+            <p class="font-mono text-sm text-muted dark:text-muted-dark leading-relaxed mt-1">
+                CSE @ New Government Polytechnic Patna 13.
+            </p>
+        </div>
+
+
+        <div class="flex flex-wrap items-center gap-4">
+            <a href="#projects"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-accent dark:bg-accent-dark text-white dark:text-black font-bold text-sm tracking-wide rounded-lg hover:opacity-90 transition-all shadow-lg shadow-accent/20 dark:shadow-accent-dark/20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m4 17 6-6-6-6" />
+                    <path d="M12 19h8" />
+                </svg>
+                VIEW_PROJECTS()
+            </a>
+            <a href="#contact"
+                class="inline-flex items-center gap-2 px-6 py-3 border border-surface-border dark:border-surface-border-dark text-fg dark:text-white font-bold text-sm tracking-wide rounded-lg hover:border-accent dark:hover:border-accent-dark transition-all">
+                CONTACT_ME()
+            </a>
+        </div>
+
+
+        <div class="flex items-center gap-6 font-mono text-xs text-muted dark:text-muted-dark">
+            <span class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                    <path d="M2 12h20" />
+                </svg>
+                Based in India
+            </span>
+            <span class="flex items-center gap-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M12 20v2" />
+                    <path d="M12 2v2" />
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <rect x="8" y="8" width="8" height="8" rx="1" />
+                </svg>
+                Freelance Ready
+            </span>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="flex flex-col gap-8 animate-on-scroll">
+        <div class="flex items-center gap-3 mb-2">
+            <div class="w-3 h-3 bg-accent dark:bg-accent-dark"></div>
+            <span class="font-mono text-xs tracking-[0.2em] uppercase text-accent dark:text-accent-dark font-bold">Tech
+                Stack</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black tracking-tight font-display text-fg dark:text-white">Technical
+            Expertise</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Frontend -->
+            <div
+                class="group border border-surface-border dark:border-surface-border-dark bg-surface dark:bg-surface-dark p-6 rounded-lg hover:border-accent dark:hover:border-accent-dark transition-all duration-300">
+                <div class="flex items-center gap-3 mb-4">
+                    <div
+                        class="text-muted dark:text-muted-dark group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-fg dark:text-white">Frontend</h3>
+                </div>
+                <p class="text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">Responsive UIs with HTML5, CSS3,
+                    JavaScript, Tailwind CSS & Bootstrap.</p>
+                <div class="flex flex-wrap gap-1.5">
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">HTML5</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">CSS3</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">JavaScript</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">Bootstrap</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">Tailwind</span>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div
+                class="group border border-surface-border dark:border-surface-border-dark bg-surface dark:bg-surface-dark p-6 rounded-lg hover:border-accent dark:hover:border-accent-dark transition-all duration-300">
+                <div class="flex items-center gap-3 mb-4">
+                    <div
+                        class="text-muted dark:text-muted-dark group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                            <line x1="6" y1="6" x2="6.01" y2="6" />
+                            <line x1="6" y1="18" x2="6.01" y2="18" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-fg dark:text-white">Backend & DB</h3>
+                </div>
+                <p class="text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">Server-side logic with Python,
+                    Flask, and structured data with MySQL.</p>
+                <div class="flex flex-wrap gap-1.5">
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">Python</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">Flask</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">MySQL</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">REST
+                        API</span>
+                </div>
+            </div>
+
+            <!-- AI -->
+            <div
+                class="group border border-surface-border dark:border-surface-border-dark bg-surface dark:bg-surface-dark p-6 rounded-lg hover:border-accent dark:hover:border-accent-dark transition-all duration-300">
+                <div class="flex items-center gap-3 mb-4">
+                    <div
+                        class="text-muted dark:text-muted-dark group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20v2" />
+                            <path d="M12 2v2" />
+                            <path d="M17 20v2" />
+                            <path d="M17 2v2" />
+                            <path d="M2 12h2" />
+                            <path d="M2 7h2" />
+                            <path d="M20 12h2" />
+                            <path d="M20 7h2" />
+                            <path d="M7 20v2" />
+                            <path d="M7 2v2" />
+                            <path d="M2 17h2" />
+                            <path d="M20 17h2" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <rect x="8" y="8" width="8" height="8" rx="1" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-fg dark:text-white">AI-Enhanced</h3>
+                </div>
+                <p class="text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">Leveraging Gemini, Claude &
+                    ChatGPT to accelerate dev cycles.</p>
+                <div class="flex flex-wrap gap-1.5">
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">Gemini</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">Claude</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">ChatGPT</span>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div
+                class="group border border-surface-border dark:border-surface-border-dark bg-surface dark:bg-surface-dark p-6 rounded-lg hover:border-accent dark:hover:border-accent-dark transition-all duration-300">
+                <div class="flex items-center gap-3 mb-4">
+                    <div
+                        class="text-muted dark:text-muted-dark group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-fg dark:text-white">Tools</h3>
+                </div>
+                <p class="text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">IDEs, version control &
+                    AI-powered coding assistants for efficient workflows.</p>
+                <div class="flex flex-wrap gap-1.5">
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">VS
+                        Code</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">IntelliJ</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">Git</span>
+                    <span
+                        class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark text-muted dark:text-muted-dark rounded">Antigravity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="flex flex-col gap-8 animate-on-scroll">
+        <div class="flex items-center gap-3 mb-2">
+            <div class="w-3 h-3 bg-accent dark:bg-accent-dark"></div>
+            <span
+                class="font-mono text-xs tracking-[0.2em] uppercase text-accent dark:text-accent-dark font-bold">Portfolio</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black tracking-tight font-display text-fg dark:text-white">Featured
+            Projects</h2>
+        <p class="font-mono text-sm text-muted dark:text-muted-dark max-w-lg">
+            > Showcasing full-stack development, data visualization, and AI integration...
+        </p>
+
+        <!-- Timeline -->
+        <div
+            class="flex flex-col gap-16 pl-6 border-l-2 border-surface-border dark:border-surface-border-dark relative">
+
+            {% if featured_project %}
+            <!-- Featured -->
+            <div class="group relative hover:border-accent dark:hover:border-accent-dark transition-colors">
+                <!-- Timeline dot -->
+                <div
+                    class="absolute -left-[calc(1.5rem+5px)] top-1 w-3 h-3 rounded-full border-2 border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark group-hover:border-accent dark:group-hover:border-accent-dark transition-colors">
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <!-- Image -->
+                    <div
+                        class="lg:w-5/12 bg-surface dark:bg-surface-dark border border-surface-border dark:border-surface-border-dark rounded-lg overflow-hidden group/img hover:border-accent/50 dark:hover:border-accent-dark/50 transition-colors">
+                        <!-- Mobile: 16:9 -->
+                        <div class="lg:hidden w-full aspect-video bg-cover bg-center transition-transform duration-700 group-hover/img:scale-105"
+                            style="background-image: url('{{ featured_project.thumbnail_mobile or featured_project.thumbnail_url }}');">
+                        </div>
+                        <!-- Desktop: 1:1 -->
+                        <div class="hidden lg:block w-full aspect-square bg-cover bg-center transition-transform duration-700 group-hover/img:scale-105"
+                            style="background-image: url('{{ featured_project.thumbnail_desktop or featured_project.thumbnail_url }}');">
+                        </div>
+                    </div>
+                    <!-- Info -->
+                    <div class="lg:w-7/12 flex flex-col justify-center gap-4">
+                        <div class="flex flex-wrap items-center gap-3">
+                            <span
+                                class="font-mono text-[10px] tracking-widest uppercase text-accent dark:text-accent-dark border border-accent/20 dark:border-accent-dark/20 px-2 py-0.5 bg-accent/5 dark:bg-accent-dark/5 rounded">Featured</span>
+                            {% if featured_project.in_development %}
+                            <span
+                                class="font-mono text-[10px] tracking-widest uppercase text-amber-700 dark:text-yellow-400 border border-amber-700/20 dark:border-yellow-400/20 px-2 py-0.5 bg-amber-700/5 dark:bg-yellow-400/5 rounded">In
+                                Development</span>
+                            {% endif %}
+                        </div>
+                        <h3
+                            class="text-2xl font-black text-fg dark:text-white group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
+                            {{ featured_project.title }}</h3>
+                        <p class="font-mono text-sm text-muted dark:text-muted-dark leading-relaxed">{{
+                            featured_project.description }}</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            {% for tech in featured_project.tech_stack %}
+                            <span
+                                class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-surface dark:bg-surface-dark text-accent/80 dark:text-accent-dark/80 rounded">{{
+                                tech }}</span>
+                            {% endfor %}
+                        </div>
+                        <div
+                            class="flex flex-wrap items-center gap-3 pt-3 border-t border-surface-border dark:border-surface-border-dark">
+                            {% if featured_project.github_link and featured_project.github_link != '#' %}
+                            <a href="{{ featured_project.github_link }}" target="_blank" rel="noopener"
+                                class="inline-flex items-center gap-2 px-4 py-2 bg-accent dark:bg-accent-dark text-white dark:text-black font-bold text-xs tracking-wide rounded-md hover:opacity-90 transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                                SOURCE_CODE
+                            </a>
+                            {% else %}
+                            <span
+                                class="font-mono text-[10px] tracking-wide text-amber-700 dark:text-yellow-400 italic">In
+                                development
+                                phase - source code not available</span>
+                            {% endif %}
+                            {% if featured_project.deployment_link and featured_project.deployment_link != '#' %}
+                            <a href="{{ featured_project.deployment_link }}" target="_blank" rel="noopener"
+                                class="inline-flex items-center gap-2 px-4 py-2 border border-accent dark:border-accent-dark text-accent dark:text-accent-dark font-bold text-xs tracking-wide rounded-md hover:bg-accent/10 dark:hover:bg-accent-dark/10 transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 3h6v6" />
+                                    <path d="M10 14 21 3" />
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                </svg>
+                                DEPLOYMENT
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            {% for project in regular_projects %}
+            <!-- Regular project -->
+            <div class="group relative">
+                <div
+                    class="absolute -left-[calc(1.5rem+5px)] top-1 w-3 h-3 rounded-full border-2 border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark group-hover:border-accent dark:group-hover:border-accent-dark transition-colors">
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <div
+                        class="lg:w-5/12 bg-surface dark:bg-surface-dark border border-surface-border dark:border-surface-border-dark rounded-lg overflow-hidden group/img hover:border-accent/50 dark:hover:border-accent-dark/50 transition-colors">
+                        <!-- Mobile: 16:9 -->
+                        <div class="lg:hidden w-full aspect-video bg-cover bg-center transition-transform duration-700 group-hover/img:scale-105"
+                            style="background-image: url('{{ project.thumbnail_mobile or project.thumbnail_url }}');">
+                        </div>
+                        <!-- Desktop: 1:1 -->
+                        <div class="hidden lg:block w-full aspect-square bg-cover bg-center transition-transform duration-700 group-hover/img:scale-105"
+                            style="background-image: url('{{ project.thumbnail_desktop or project.thumbnail_url }}');">
+                        </div>
+                    </div>
+                    <div class="lg:w-7/12 flex flex-col justify-center gap-3">
+                        <h3
+                            class="text-xl font-black text-fg dark:text-white group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
+                            {{ project.title }}</h3>
+                        <p class="font-mono text-sm text-muted dark:text-muted-dark leading-relaxed">{{
+                            project.description }}</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            {% for tech in project.tech_stack %}
+                            <span
+                                class="font-mono text-[10px] px-2 py-0.5 border border-surface-border dark:border-surface-border-dark bg-surface dark:bg-surface-dark text-accent/80 dark:text-accent-dark/80 rounded">{{
+                                tech }}</span>
+                            {% endfor %}
+                        </div>
+                        <div
+                            class="flex flex-wrap items-center gap-3 pt-2 border-t border-surface-border dark:border-surface-border-dark">
+                            {% if project.in_development %}
+                            <span
+                                class="font-mono text-[10px] tracking-widest uppercase text-amber-700 dark:text-yellow-400 border border-amber-700/20 dark:border-yellow-400/20 px-2 py-0.5 bg-amber-700/5 dark:bg-yellow-400/5 rounded">In
+                                Development</span>
+                            {% endif %}
+                            {% if project.github_link and project.github_link != '#' %}
+                            <a href="{{ project.github_link }}" target="_blank" rel="noopener"
+                                class="inline-flex items-center gap-2 px-4 py-2 bg-accent dark:bg-accent-dark text-white dark:text-black font-bold text-xs tracking-wide rounded-md hover:opacity-90 transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                                SOURCE_CODE
+                            </a>
+                            {% else %}
+                            <span
+                                class="font-mono text-[10px] tracking-wide text-amber-700 dark:text-yellow-400 italic">In
+                                development
+                                phase - source code not available</span>
+                            {% endif %}
+                            {% if project.deployment_link and project.deployment_link != '#' %}
+                            <a href="{{ project.deployment_link }}" target="_blank" rel="noopener"
+                                class="inline-flex items-center gap-2 px-4 py-2 border border-accent dark:border-accent-dark text-accent dark:text-accent-dark font-bold text-xs tracking-wide rounded-md hover:bg-accent/10 dark:hover:bg-accent-dark/10 transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 3h6v6" />
+                                    <path d="M10 14 21 3" />
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                </svg>
+                                DEPLOYMENT
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="flex flex-col gap-6 animate-on-scroll">
+        <div class="flex items-center gap-3 mb-2">
+            <div class="w-3 h-3 bg-accent dark:bg-accent-dark"></div>
+            <span
+                class="font-mono text-xs tracking-[0.2em] uppercase text-accent dark:text-accent-dark font-bold">About</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black tracking-tight font-display text-fg dark:text-white">Who I Am</h2>
+
+        <div
+            class="border border-surface-border dark:border-surface-border-dark bg-surface dark:bg-surface-dark rounded-lg p-6 md:p-8 flex flex-col gap-6">
+            <!-- Bio quote -->
+            <div class="border-l-2 border-accent dark:border-accent-dark pl-5">
+                <p class="text-muted dark:text-muted-dark leading-relaxed md:text-lg">
+                    I'm a Computer Science and Engineering student at <strong class="text-fg dark:text-white">New
+                        Government Polytechnic Patna 13</strong>, focused on building structured, scalable web
+                    applications. I work across the full stack-designing database schemas in MySQL, developing backend
+                    systems with Flask, and creating responsive user interfaces using JavaScript and Tailwind CSS.
+                </p>
+                <p class="text-muted dark:text-muted-dark leading-relaxed md:text-lg mt-3">
+                    I prioritize clean architecture, performance, and maintainable code. I also leverage modern AI tools
+                    to streamline development and improve productivity.
+                </p>
+            </div>
+
+            <!-- Highlights row -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-surface-border dark:border-surface-border-dark">
+                <div class="flex items-start gap-3">
+                    <div
+                        class="w-8 h-8 rounded-md bg-accent/10 dark:bg-accent-dark/10 flex items-center justify-center text-accent dark:text-accent-dark shrink-0 mt-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-fg dark:text-white">Focus</h4>
+                        <p class="font-mono text-xs text-muted dark:text-muted-dark mt-0.5">Full-stack web development
+                            & scalable architecture</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div
+                        class="w-8 h-8 rounded-md bg-accent/10 dark:bg-accent-dark/10 flex items-center justify-center text-accent dark:text-accent-dark shrink-0 mt-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-fg dark:text-white">Stack</h4>
+                        <p class="font-mono text-xs text-muted dark:text-muted-dark mt-0.5">Flask, JavaScript, MySQL,
+                            Tailwind CSS</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div
+                        class="w-8 h-8 rounded-md bg-accent/10 dark:bg-accent-dark/10 flex items-center justify-center text-accent dark:text-accent-dark shrink-0 mt-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20v2" />
+                            <path d="M12 2v2" />
+                            <path d="M17 20v2" />
+                            <path d="M17 2v2" />
+                            <path d="M2 12h2" />
+                            <path d="M2 7h2" />
+                            <path d="M20 12h2" />
+                            <path d="M20 7h2" />
+                            <path d="M7 20v2" />
+                            <path d="M7 2v2" />
+                            <path d="M2 17h2" />
+                            <path d="M20 17h2" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <rect x="8" y="8" width="8" height="8" rx="1" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-fg dark:text-white">Approach</h4>
+                        <p class="font-mono text-xs text-muted dark:text-muted-dark mt-0.5">AI-enhanced workflows &
+                            clean, maintainable code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="flex flex-col gap-6 animate-on-scroll">
+        <div class="flex items-center gap-3 mb-2">
+            <div class="w-3 h-3 bg-accent dark:bg-accent-dark"></div>
+            <span
+                class="font-mono text-xs tracking-[0.2em] uppercase text-accent dark:text-accent-dark font-bold">Education</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black tracking-tight font-display text-fg dark:text-white">Academic
+            Background</h2>
+
+        <div
+            class="group border border-surface-border dark:border-surface-border-dark bg-surface dark:bg-surface-dark rounded-lg p-6 hover:border-accent dark:hover:border-accent-dark transition-all">
+            <div class="flex items-start gap-5">
+                <div
+                    class="w-12 h-12 rounded-lg bg-accent/10 dark:bg-accent-dark/10 flex items-center justify-center text-accent dark:text-accent-dark shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                    </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h3 class="font-bold text-fg dark:text-white">Diploma in Computer Science & Engineering</h3>
+                    <p class="text-sm font-semibold text-accent dark:text-accent-dark">New Government Polytechnic Patna
+                        13</p>
+                    <p class="font-mono text-xs text-muted dark:text-muted-dark mt-1.5 flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        Expected Completion: May 2026
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="flex flex-col gap-6 pb-10 animate-on-scroll">
+        <div class="flex items-center gap-3 mb-2">
+            <div class="w-3 h-3 bg-accent dark:bg-accent-dark"></div>
+            <span class="font-mono text-xs tracking-[0.2em] uppercase text-accent dark:text-accent-dark font-bold">Get
+                in Touch</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black tracking-tight font-display text-fg dark:text-white">Contact Me</h2>
+        <p class="font-mono text-sm text-muted dark:text-muted-dark max-w-lg">
+            > Have a project in mind? Drop me a message...
+        </p>
+
+        <form id="contact-form" action="/contact" method="POST"
+            class="border border-surface-border dark:border-surface-border-dark bg-surface dark:bg-surface-dark rounded-lg p-6 md:p-8 flex flex-col gap-5">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="flex flex-col gap-1.5">
+                    <label for="name"
+                        class="font-mono text-[11px] font-bold tracking-wider uppercase text-muted dark:text-muted-dark">Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="h-11 rounded-lg border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark px-4 text-sm text-fg dark:text-white placeholder:text-muted dark:placeholder:text-muted-dark focus:border-accent dark:focus:border-accent-dark focus:ring-1 focus:ring-accent/30 dark:focus:ring-accent-dark/30 outline-none transition-all font-mono"
+                        placeholder="your name" />
+                </div>
+                <div class="flex flex-col gap-1.5">
+                    <label for="email"
+                        class="font-mono text-[11px] font-bold tracking-wider uppercase text-muted dark:text-muted-dark">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="h-11 rounded-lg border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark px-4 text-sm text-fg dark:text-white placeholder:text-muted dark:placeholder:text-muted-dark focus:border-accent dark:focus:border-accent-dark focus:ring-1 focus:ring-accent/30 dark:focus:ring-accent-dark/30 outline-none transition-all font-mono"
+                        placeholder="you@email.com" />
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+                <label for="subject"
+                    class="font-mono text-[11px] font-bold tracking-wider uppercase text-muted dark:text-muted-dark">Subject</label>
+                <input type="text" id="subject" name="subject" required
+                    class="h-11 rounded-lg border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark px-4 text-sm text-fg dark:text-white placeholder:text-muted dark:placeholder:text-muted-dark focus:border-accent dark:focus:border-accent-dark focus:ring-1 focus:ring-accent/30 dark:focus:ring-accent-dark/30 outline-none transition-all font-mono"
+                    placeholder="what's this about?" />
+            </div>
+
+            <div class="flex flex-col gap-1.5">
+                <label for="message"
+                    class="font-mono text-[11px] font-bold tracking-wider uppercase text-muted dark:text-muted-dark">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                    class="rounded-lg border border-surface-border dark:border-surface-border-dark bg-bg dark:bg-bg-dark px-4 py-3 text-sm text-fg dark:text-white placeholder:text-muted dark:placeholder:text-muted-dark focus:border-accent dark:focus:border-accent-dark focus:ring-1 focus:ring-accent/30 dark:focus:ring-accent-dark/30 outline-none transition-all resize-none font-mono"
+                    placeholder="tell me about your project..."></textarea>
+            </div>
+
+            <button type="submit"
+                class="flex h-11 w-fit cursor-pointer items-center justify-center gap-2 rounded-lg bg-accent dark:bg-accent-dark text-white dark:text-black font-bold text-sm tracking-wide px-8 hover:opacity-90 transition-all shadow-lg shadow-accent/20 dark:shadow-accent-dark/20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m22 2-7 20-4-9-9-4Z" />
+                    <path d="M22 2 11 13" />
+                </svg>
+                SEND_MESSAGE()
+            </button>
+        </form>
+    </section>
+
+</div>
+{% endblock %}
