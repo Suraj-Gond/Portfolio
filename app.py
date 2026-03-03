@@ -24,6 +24,7 @@ def get_db():
         user=app.config["DB_USER"],
         password=app.config["DB_PASSWORD"],
         database=app.config["DB_NAME"],
+        ssl_disabled=False,
     )
 
 
@@ -118,6 +119,18 @@ def contact():
 
     flash("Thank you! Your message has been sent successfully.", "success")
     return redirect(url_for("index") + "#contact")
+
+
+@app.route("/healthz")
+def health_check():
+    status = {"app": "ok"}
+    try:
+        conn = get_db()
+        conn.close()
+        status["db"] = "ok"
+    except Exception:
+        status["db"] = "unavailable"
+    return status, 200
 
 
 @app.errorhandler(404)
