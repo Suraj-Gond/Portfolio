@@ -89,7 +89,8 @@ def contact():
         flash("Please enter a valid email address.", "error")
         return redirect(url_for("index") + "#contact")
 
-    # Save to database
+    # Try saving to database (non-blocking)
+    db_saved = False
     try:
         conn = get_db()
         cursor = conn.cursor()
@@ -100,24 +101,31 @@ def contact():
         conn.commit()
         cursor.close()
         conn.close()
+        db_saved = True
     except mysql.connector.Error as err:
         print(f"[DB ERROR] {err}")
-        flash("Could not save your message. Please try again later.", "error")
-        return redirect(url_for("index") + "#contact")
 
-    # Send email notification
+    # Send email notification (always attempted)
+    email_sent = False
     try:
         if app.config["MAIL_USERNAME"]:
+            body = f"Name: {name}\nEmail: {email}\nSubject: {subject}\n\nMessage:\n{message}"
+            if not db_saved:
+                body += "\n\n[NOTE] Database was unavailable - this message was NOT saved to DB."
             msg = MailMessage(
                 subject=f"Portfolio Contact: {subject}",
                 recipients=[app.config["ADMIN_EMAIL"]],
-                body=f"Name: {name}\nEmail: {email}\nSubject: {subject}\n\nMessage:\n{message}",
+                body=body,
             )
             mail.send(msg)
+            email_sent = True
     except Exception as err:
         print(f"[MAIL ERROR] {err}")
 
-    flash("Thank you! Your message has been sent successfully.", "success")
+    if email_sent or db_saved:
+        flash("Thank you! Your message has been sent successfully.", "success")
+    else:
+        flash("Could not send your message. Please try again later.", "error")
     return redirect(url_for("index") + "#contact")
 
 

@@ -1,57 +1,55 @@
 [
   {
-    "title": "VasAQ — Air Quality Monitor",
-    "thumbnail_url": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&h=400&fit=crop",
-    "thumbnail_mobile": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&h=338&fit=crop",
-    "thumbnail_desktop": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&h=400&fit=crop",
+    "title": "VasAQ - Air Quality Monitor",
+    "thumbnail_url": "/static/thumbnails/VasAQ.webp",
     "tech_stack": [
       "Python",
       "Flask",
       "Tailwind CSS",
       "LeafletJS",
-      "data.gov.in API"
+      "data.gov.in API",
+      "Visual Crossing API",
+      "Non-Negative Matrix Factorization (NMF)",
+      "Random Forest Regressor"
     ],
-    "description": "An integrated urban air quality monitoring, source apportionment, and 15-day AQI forecasting web application using real-time government data.",
-    "github_link": "https://github.com/surajgond",
+    "description": "VasAQ is an environmental data platform that translates raw atmospheric data into actionable public health insights. Unlike standard trackers, VasAQ identifies the likely causes of local pollution and provides a extended 15-day predictive outlook using machine learning.",
+    "github_link": "#",
     "live_demo_link": "#",
     "deployment_link": "#",
     "in_development": true,
     "featured": true
   },
   {
-    "title": "Student Management System",
-    "thumbnail_url": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop",
-    "thumbnail_mobile": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=338&fit=crop",
-    "thumbnail_desktop": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&h=400&fit=crop",
+    "title": "Country Info",
+    "thumbnail_url": "/static/thumbnails/Country-info.webp",
     "tech_stack": [
       "Python",
       "Flask",
-      "MySQL",
+      "REST API",
       "Bootstrap"
     ],
-    "description": "A full-stack CRUD application for managing student records with authentication, search filters, and PDF report generation.",
-    "github_link": "#",
-    "live_demo_link": "#",
-    "deployment_link": "#",
-    "in_development": true,
+    "description": "A clean and interactive web application that allows users to search for detailed information about any country. This project provides a seamless interface to fetch geographical and demographic data using the REST Countries API and visualizes locations via Google Maps.",
+    "github_link": "https://github.com/Suraj-Gond/Country_info",
+    "live_demo_link": "https://surajgond.pythonanywhere.com",
+    "deployment_link": "https://surajgond.pythonanywhere.com",
+    "in_development": false,
     "featured": false
   },
   {
-    "title": "E-Commerce Analytics Dashboard",
-    "thumbnail_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    "thumbnail_mobile": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=338&fit=crop",
-    "thumbnail_desktop": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop",
+    "title": "Portfolio Website",
+    "thumbnail_url": "/static/thumbnails/portfolio.webp",
     "tech_stack": [
       "Python",
       "Flask",
-      "Chart.js",
-      "MySQL"
+      "Tailwind CSS",
+      "MySQL",
+      "Flask Mail"
     ],
-    "description": "A real-time dashboard for tracking sales metrics, inventory levels, and customer analytics with interactive charts.",
-    "github_link": "https://github.com/surajgond",
-    "live_demo_link": "#",
-    "deployment_link": "#",
-    "in_development": true,
+    "description": "My own Full-stack portfolio built with Flask & MySQL. Features a responsive Tailwind CSS UI and an SMTP-integrated contact system using Flask-Mail.",
+    "github_link": "https://github.com/Suraj-Gond/Portfolio",
+    "live_demo_link": "https://surajgond.onrender.com",
+    "deployment_link": "https://surajgond.onrender.com",
+    "in_development": false,
     "featured": false
   }
 ]
