@@ -24,7 +24,7 @@ def get_db():
         user=app.config["DB_USER"],
         password=app.config["DB_PASSWORD"],
         database=app.config["DB_NAME"],
-        ssl_disabled=False,
+        ssl_disabled=app.config.get("DB_SSL_DISABLED", True),
     )
 
 
