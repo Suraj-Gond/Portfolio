@@ -47,8 +47,8 @@
     ],
     "description": "My own Full-stack portfolio built with Flask & MySQL. Features a responsive Tailwind CSS UI and an SMTP-integrated contact system using Flask-Mail.",
     "github_link": "https://github.com/Suraj-Gond/Portfolio",
-    "live_demo_link": "https://surajgond.onrender.com",
-    "deployment_link": "https://surajgond.onrender.com",
+    "live_demo_link": "https://surajgond.pythonanywhere.com",
+    "deployment_link": "https://surajgond.pythonanywhere.com",
     "in_development": false,
     "featured": false
   }
