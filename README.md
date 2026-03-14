@@ -2,23 +2,31 @@
 
 Full-stack developer portfolio built with Flask, Tailwind CSS, and MySQL.
 
-**Live:** [surajgond.onrender.com](https://surajgond.onrender.com)
+**Live:** [surajgond.pythonanywhere.com](https://surajgond.pythonanywhere.com)
 
 ## Tech Stack
 
 - Python, Flask, Flask-Mail
-- MySQL (Aiven)
+- MySQL
 - Tailwind CSS v4, Vanilla JS
-- Deployed on Render
+- Deployed on PythonAnywhere
 
 ## Setup
 
 1. Clone the repo and create a virtual environment:
-```bash
+```
 git clone https://github.com/Suraj-Gond/Portfolio.git
+```
+```
 cd Portfolio
+```
+```
 python -m venv venv
+```
+```
 venv\Scripts\activate   # Windows
+```
+```
 pip install -r requirements.txt
 ```
 
@@ -38,6 +46,29 @@ python app.py
 ```
 
 The app will be available at `http://localhost:5000`.
+
+### Database Setup (Local/XAMPP)
+
+For local development,use XAMPP to host MySQL database:
+1. Open XAMPP Control Panel and start **Apache** and **MySQL**.
+2. Click the **Admin** button next to MySQL to open phpMyAdmin in browser.
+3. Create a new database named `your_database_name` (matching your `.env` file).
+4. Click on new database, go to the **SQL** tab, and run the following command to create the contact table:
+```sql
+CREATE TABLE IF NOT EXISTS contact_messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(120) NOT NULL,
+    subject VARCHAR(200) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+5. Click **Go** to execute the query. Your local database is now ready!
+
+*note: if you are using any other local MySQL server, then follow the same steps as above.*
+
+*note: Creating table is optional, as python backend will create the table if it doesn't exist.*
 
 ## Environment Variables
 
